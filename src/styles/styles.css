@@ -1,0 +1,950 @@
+:root {
+  --base-color: #4E6688;
+  --font-color: #71C0BB;
+  --font-color-2: #332D56;
+  --background-color: #EAEFEF;
+  --font-family: "Poppins", sans-serif;
+}
+
+
+/* Tampilan Login */
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: var(--font-family);
+    background-color: var(--background-color); 
+    min-height: 100vh;
+  }
+
+  .header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .instruction-text {
+    color: var(--base-color); 
+    font-size: 0.9em;
+  }
+
+  .auth-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--base-color); 
+  }
+
+  .story-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-control {
+    margin-bottom: 20px;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--font-color-2); 
+    font-size: 0.95em;
+    font-weight: bold;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--font-color-2); 
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: var(--font-color-2);
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: var(--base-color); 
+  }
+
+  input[type="email"]::placeholder,
+  input[type="password"]::placeholder {
+    color: var(--font-color-2);
+  }
+
+  .btn {
+    background-color: var(--font-color-2); 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--base-color);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .btn:hover {
+    background-color: var(--base-color);
+    color: white;
+    border: 1px solid var(--base-color); 
+  }
+
+  .auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--font-color-2); 
+    font-size: 0.9em;
+  }
+
+  .auth-link {
+    color: var(--base-color); 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .auth-link:hover {
+    text-decoration: underline;
+    color: var(--font-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  .error-message {
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
+    background-color: var(--font-color-2); 
+    display: none; 
+  }
+
+  /* end tampilan login */
+
+
+
+  /* tampilan register */
+ .register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  min-height: 100vh;
+}
+
+.register-form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid var(--base-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.register__title {
+  text-align: center;
+  font-size: 1.8em;
+  color: var(--base-color);
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form__title-container input[type="text"],
+.register-form__title-container input[type="email"],
+.register-form__title-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--font-color-2);
+  border-radius: 4px;
+  font-size: 1em;
+  color: var(--font-color-2);
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+
+.register-form__title-container input[type="text"]:focus,
+.register-form__title-container input[type="email"]:focus,
+.register-form__title-container input[type="password"]:focus {
+  border-color: var(--base-color);
+  outline: none;
+}
+
+
+.register-form__title-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--font-color-2);
+  border-radius: 4px;
+  font-size: 1em;
+  color: var(--font-color-2);
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+  font-family: var(--font-family);
+  box-sizing: border-box;
+}
+
+.register-form__title-container input:focus {
+  border-color: var(--base-color);
+  outline: none;
+}
+
+.register-form__title-container input::placeholder {
+  color: var(--font-color-2);
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#submit-button {
+  background-color: var(--font-color-2);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid var(--base-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#submit-button:hover {
+  background-color: var(--base-color);
+  color: white;
+}
+
+.error-message {
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 4px;
+  background-color: var(--font-color-2);
+  display: none;
+}
+  /* end tampilan register */
+
+
+
+  /* tampilan home */
+ .home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+}
+
+.header-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+.instruction-text-home {
+  color: var(--base-color); 
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.instruction-text-home:hover {
+  color: var(--font-color-2); 
+}
+
+.upload-btn {
+  background-color: var(--font-color-2); 
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.upload-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  z-index: 0;
+}
+
+.upload-btn:hover::before {
+  left: 0;
+}
+
+.upload-btn:hover {
+  background-color: var(--base-color);
+  color: white;
+}
+
+.story-title {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--base-color);
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  animation: fadeInDown 0.9s ease both;
+  font-family: var(--font-family);
+}
+
+.story-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--font-color-2);
+  margin: 10px auto 0 auto;
+  border-radius: 2px;
+  animation: growLine 1s ease-out forwards;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 960px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.photo-item {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--font-color-2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 12px;
+  padding: 8px;
+  animation: fadeInScale 0.6s ease forwards;
+  opacity: 0;
+}
+
+.photo-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-color: var(--base-color);
+}
+
+.photo-container {
+  display: block;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-radius: 10px;
+}
+
+.photo-container:hover img {
+  transform: scale(1.05);
+}
+
+.photo-info {
+  padding: 10px;
+}
+
+.photo-name {
+  margin-top: 0;
+  margin-bottom: 6px;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--base-color);
+}
+
+.photo-description {
+  margin-bottom: 8px;
+  color: var(--font-color-2);
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.photo-date {
+  color: #999;
+  font-size: 0.85em;
+}
+
+.loading-indicator,
+.empty-gallery,
+.error-container {
+  text-align: center;
+  padding: 25px;
+  color: var(--font-color-2);
+  font-size: 1em;
+}
+
+.loading-indicator::after {
+  content: "⏳";
+  display: block;
+  font-size: 1.5em;
+  margin-top: 10px;
+  animation: pulse 1.2s infinite;
+}
+
+.empty-gallery {
+  font-weight: bold;
+  color: var(--base-color);
+}
+
+.error-container .error-message {
+  color: var(--base-color);
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+
+.retry-button {
+  background-color: var(--font-color-2);
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.retry-button:hover {
+  background-color: var(--base-color);
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLine {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 60px;
+    opacity: 1;
+  }
+}
+/* end tampilan home */
+
+
+
+/* tampilan detail */
+.story-verse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: sans-serif;
+    background-color: var(--background-color); 
+    min-height: 100vh;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+.instruction-text-detail {
+  color: var(--base-color); 
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.instruction-text-detail:hover {
+  color: var(--font-color-2); 
+  background-color: var(--base-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+}
+
+  .back-btn {
+    background-color: var(--font-color-2); 
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease;
+  }
+
+  .back-btn:hover {
+    background-color: var(--base-color); 
+  }
+
+  .detail-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+    border: 1px solid var(--font-color-2); 
+  }
+
+  .form-control-page {
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--font-color-2); 
+    padding-bottom: 20px;
+  }
+
+  .form-control-page:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .detail-value {
+    color: var(--font-color-2); 
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  .image-slider-container {
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--base-color); 
+  }
+
+  .story-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .location-coords {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .coord-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid var(--base-color);
+    border-radius: 4px;
+    font-size: 0.95em;
+    box-sizing: border-box;
+    background-color: var(--background-color); 
+    color: var(--font-color-2); 
+  }
+
+  .location-map-container {
+    margin-top: 20px;
+    border: 1px solid var(--base-color);
+    border-radius: 4px;
+    overflow: hidden;
+    height: 300px; 
+  }
+
+  .location-map {
+    width: 100%;
+    height: 100%;
+  }
+
+  .loading-indicator,
+  .error-message {
+    text-align: center;
+    padding: 20px;
+    color: var(--font-color-2); 
+    font-size: 1.1em;
+  }
+
+  .error-message .back-btn {
+    margin-top: 15px;
+    display: inline-block;
+  }
+
+  /* end tampilan detail */
+  
+
+  /* tampilan addStory */
+
+.instruction-text-add {
+  color: var(--base-color); 
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.instruction-text-add:hover {
+  color: var(--font-color-2); 
+}
+
+  .upload-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+    border: 1px solid var(--font-color-2);
+    margin-bottom: 20px; 
+  }
+
+  .upload-form-container h2 {
+    margin-bottom: 20px;
+    color: var(--font-color-2); 
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .form-control-story {
+    margin-bottom: 25px;
+  }
+
+  .input-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--base-color); 
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 100px;
+    color: var(--font-color-2); 
+  }
+
+  .input-container input[type="file"] {
+    display: none;
+  }
+
+  #photo-more-info {
+    color: var(--base-color); 
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  #photo-more-info:hover {
+    color: var(--font-color-2); 
+
+  }
+
+  .documentation-container {
+    margin-top: 10px;
+    border: 1px solid var(--base-color);
+    border-radius: 4px;
+    padding: 15px;
+    background-color: var(--background-color); 
+    color: var(--font-color-2);
+    font-size: 0.95em;
+    line-height: 1.6;
+    box-sizing: border-box;
+  }
+
+  .documentation-container p {
+    margin-bottom: 10px;
+  }
+
+  .documentation-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .btn-outline {
+    background-color: white;
+    color: var(--font-color-2); 
+    border: 1px solid var(--base-color);
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    background-color: var(--font-color-2); 
+    color: #fff; 
+    border-color: var(--font-color-2);
+  }
+
+  /* end tampilan addStory */
+
+/* tampilan halaman Utama */
+.skip-to-content {
+  position: fixed; 
+  top: -1000px;
+  left: 1rem;
+  background-color: var(--base-color);
+  color: var(--background-color);
+  padding: 0.75em 1.25em;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid var(--font-color-2);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1002; 
+  transition: top 0.3s ease;
+  font-family: var(--font-family);
+}
+
+.skip-to-content:focus {
+  top: 1rem;
+  clip: auto;
+  -webkit-clip-path: none;
+  clip-path: none;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Bitter", serif;
+  background-color: var(--background-color);
+  color: var(--font-color-2);
+}
+
+header {
+  background-color: var(--font-color-2);
+  border-bottom: 1px solid rgba(156, 39, 176, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; 
+  padding: 0 20px;
+}
+
+.brand-name {
+  font-family: var(--font-family);
+  font-size: 3rem;
+  color: var(--font-color);
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.brand-name:hover {
+  color: #fff;
+  
+}
+
+.navigation-drawer {
+  display: flex;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list li a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-list li a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  opacity: 0;
+  background-color: var(--font-color);
+}
+
+.nav-list li a:hover {
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  background-color: #4E6688;
+}
+    
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--base-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--font-color-2);
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                gap: 15px;
+            }
+
+            .brand-name {
+                font-size: 1.7rem;
+            }
+
+            .nav-list li a {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-list {
+                gap: 10px;
+            }
+
+            .brand-name {
+                font-size: 1.5rem;
+            }
+
+            .nav-list li a {
+                font-size: 0.85rem;
+            }
+        }
+
+
+footer {
+  background-color: var(--font-color-2);
+  color: var(--font-color);
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  z-index: 999; 
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 0.5rem;
+  font-weight: bold;
+  font-family: var(--font-family);
+  letter-spacing: 1px;
+}
+
+/* end tampilan halaman utama */
+
+
+
+
+  
